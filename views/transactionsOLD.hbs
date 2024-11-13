@@ -1,0 +1,65 @@
+
+
+<!--    {{#if hasTransactions }}-->
+<!--        <table border="1">-->
+<!--            <tr><th> Type </th><th> Amount </th> <th> Date </th><th>Category</th><th>Description</th></tr>-->
+<!--            {{#each transactions}}-->
+<!--                <tr>-->
+<!--                    <td> {{this.type}}</td>-->
+<!--                    <td> {{this.amount}}</td>-->
+<!--                    <td> {{this.date}} </td>-->
+<!--                    <td> {{this.category}}</td>-->
+<!--                    <td> {{this.description}}</td>-->
+<!--                    <td>-->
+<!--                        <form action="delete/{{this.id}}" method="get" >-->
+<!--                            <button type="submit">-->
+<!--                                Delete-->
+<!--                            </button>-->
+<!--                        </form>-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                        <form action="edit/{{this.id}}" method="get" >-->
+<!--                            <button type="submit">-->
+<!--                                Edit-->
+<!--                            </button>-->
+<!--                        </form>-->
+<!--                    </td>-->
+<!--                </tr>-->
+<!--            {{/each}}-->
+<!--        </table>-->
+<!--    {{else}}-->
+<!--        <h2> No Transactions found</h2>-->
+<!--    {{/if}}-->
+<!--    <a href="/add"> Add New Product </a>-->
+<!--</main>-->
+
+<table class="table">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+    </tr>
+    </tbody>
+</table>

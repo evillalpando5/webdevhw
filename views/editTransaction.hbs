@@ -1,0 +1,23 @@
+<main>
+    <p> Edit Transaction </p>
+
+    {{#if gotUpdate }}
+        <form method="POST" action="/edit/{{id}}">
+            <table border="1">
+                <tr> <th> Id </th><th> Type </th><th> Amount </th><th>Category</th><th>Description</th></tr>
+                <tr>
+                    <td> {{transaction.id}} </td>
+                    <input type="hidden" value="{{transaction.id}}" name="id">
+                    <td> <input type="text" name="type" value="{{transaction.type}}"></td>
+                    <td> <input type="text" name="amount" value="{{transaction.amount}}"></td>
+                    <td> <input type="text" name="category" value="{{transaction.category}}"></td>
+                    <td> <input type="text" name="description" value="{{transaction.description}}"></td>
+                    <td> <button type="submit"> Submit </button></td>
+                </tr>
+            </table>
+        </form>
+    {{else}}
+        <h2> No Transactions found</h2>
+    {{/if}}
+    <a href="/add"> Add New Product </a>
+</main>

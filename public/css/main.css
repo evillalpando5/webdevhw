@@ -1,0 +1,59 @@
+#404title {
+    font-size: 60px;
+}
+#404div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#404message {
+    font-size: 20px;
+}
+
+#homeSummary{
+    text-align: center;
+    margin-top: 10%;
+    padding: 15px;
+}
+#logo {
+    height: 60px;
+}
+#homeTitle {
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+#income{
+    background-color: hotpink;
+
+}
+#expense {
+    background-color: mediumpurple;
+}
+#balance {
+    background-color: deeppink;
+
+}
+#income, #expense, #balance {
+    border-radius: 5px;
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 30px;
+    color: white;
+}
+div p {
+    margin-bottom: 0;
+}
+#trscTable {
+    margin-top: 5%;
+}
+#transactionTable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
